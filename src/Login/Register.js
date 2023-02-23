@@ -3,7 +3,7 @@ import SignIn from "./SignIn";
 import ForgotPassword from "./ForgotPassword";
 
 function Register() {
-  const data = JSON.parse(localStorage.getItem("user"));
+  const data = JSON.parse(localStorage.getItem("user")) || {};
 
   console.log(data);
   const onFormValue = (e) => {

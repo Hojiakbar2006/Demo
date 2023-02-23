@@ -10,9 +10,7 @@ function ForgotPassword({ data }) {
         placeholder="name"
         name="login"
         onChange={(e) => {
-          data.name.ConfirmPassword === e.target.value
-            ? setState(true)
-            : setState(false);
+          data.name === e.target.value ? setState(true) : setState(false);
         }}
       />
       <input

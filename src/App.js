@@ -1,9 +1,10 @@
 import React from "react";
-import Register from "./Login/Register";
+import { Table } from "./Table";
 
-
-export function App(){
-  return(
-    <><Register/></>
-  )
+export function App() {
+  return (
+    <>
+      <Table />
+    </>
+  );
 }

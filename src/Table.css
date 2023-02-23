@@ -1,0 +1,33 @@
+table {
+  background: #1f1a46;
+  font-family: sans-serif;
+  border-collapse: collapse;
+}
+
+table> :nth-child(even){
+    background: #312d5f;
+}
+
+th{
+    padding: 20px;
+    border-right: 1px solid #fff;
+}
+
+.tittle {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.tittle > :last-child {
+  font-weight: 200;
+}
+
+.head {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+

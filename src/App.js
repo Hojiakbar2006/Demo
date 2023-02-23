@@ -1,10 +1,10 @@
 import React from "react";
-import { Table } from "./Table";
+import Register from "./Login/Register";
 
 export function App() {
   return (
     <>
-      <Table />
+      <Register />
     </>
   );
 }

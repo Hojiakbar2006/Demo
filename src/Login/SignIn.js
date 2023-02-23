@@ -6,14 +6,15 @@ function SignIn({ data }) {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          const filtered = data.filter(
-            (item) => item.name === e.target.name.value
-          );
 
-          if (filtered[0].ConfirmPassword === e.target.signinPassword.value) {
-            console.log(filtered[0].ConfirmPassword);
+          if (data.name === e.target.name.value) {
+            if (data.ConfirmPassword === e.target.signinPassword.value) {
+              alert("To'g'ri");
+            } else {
+              alert("xato");
+            }
           } else {
-            console.log("xato");
+            alert("no name");
           }
         }}
       >

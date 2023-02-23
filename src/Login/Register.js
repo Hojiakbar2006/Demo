@@ -1,11 +1,11 @@
-import React, { memo, useState } from "react";
+import React, { memo } from "react";
 import SignIn from "./SignIn";
+import ForgotPassword from "./ForgotPassword";
 
 function Register() {
-  const [arr, setArr] = useState(
-    JSON.parse(localStorage.getItem("user")) || []
-  );
+  const data = JSON.parse(localStorage.getItem("user"));
 
+  console.log(data);
   const onFormValue = (e) => {
     e.preventDefault();
     if (e.target.password.value === e.target.ConfirmPassword.value) {
@@ -14,9 +14,8 @@ function Register() {
       for (let i = 0; i < targetData.length; i++) {
         if (targetData[i].name !== "") {
           value[targetData[i].name] = targetData[i].value;
-          setArr([...arr, { ...value }]);
         }
-        localStorage.setItem("user", JSON.stringify([...arr, { ...value }]));
+        localStorage.setItem("user", JSON.stringify(value));
       }
       return value;
     } else {
@@ -33,16 +32,8 @@ function Register() {
         <input type="text" name="ConfirmPassword" placeholder="Password" />
         <input type="submit" value="submit" />
       </form>
-      {arr.map((item, i) => {
-        return (
-          <div key={i}>
-            <p>{item.name}</p>
-            <p>{item.email}</p>
-            <p>{item.ConfirmPassword}</p>
-          </div>
-        );
-      })}
-      <SignIn data={arr} />
+      <SignIn data={data} />
+      <ForgotPassword data={data} />
     </>
   );
 }

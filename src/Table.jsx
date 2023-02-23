@@ -14,7 +14,7 @@ export function Table() {
           <th>
             <div className="head">
               <span>BASIC</span>
-              <span>FREE</span>
+            
             </div>
           </th>
           <th>

@@ -5,7 +5,6 @@ import ForgotPassword from "./ForgotPassword";
 function Register() {
   const data = JSON.parse(localStorage.getItem("user")) || {};
 
-  console.log(data);
   const onFormValue = (e) => {
     e.preventDefault();
     if (e.target.password.value === e.target.ConfirmPassword.value) {
@@ -22,6 +21,7 @@ function Register() {
       alert("dovdir xato qilding");
     }
   };
+
 
   return (
     <>

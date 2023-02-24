@@ -3,7 +3,7 @@ import "./Table.css";
 
 export function Table() {
   return (
-    <div>
+    <div className="card">
       <table>
         <tr>
           <th>
@@ -51,41 +51,46 @@ export function Table() {
           <th>120GB</th>
         </tr>
         <tr>
-          <th>Monthly Bandwath</th>
-          <th>150GB</th>
-          <th>3030GB</th>
-          <th>1TB</th>
-          <th>120GB</th>
+          <th>Monthly Bandwith</th>
+          <th className="tick">&#10003;</th>
+          <th className="tick">&#10003;</th>
+          <th className="tick">&#10003;</th>
+          <th className="eks">&#x2715;</th>
         </tr>
         <tr>
-          <th>Monthly Bandwath</th>
-          <th>150GB</th>
-          <th>3030GB</th>
-          <th>1TB</th>
-          <th>120GB</th>
+          <th>Subdomain name</th>
+          <th className="tick">&#10003;</th>
+          <th className="eks">&#x2715;</th>
+          <th className="tick">&#10003;</th>
+          <th className="eks">&#x2715;</th>
         </tr>
         <tr>
-          <th>Monthly Bandwath</th>
-          <th>150GB</th>
-          <th>3030GB</th>
-          <th>1TB</th>
-          <th>120GB</th>
+          <th>Email Address</th>
+          <th className="eks">&#x2715;</th>
+          <th className="eks">&#x2715;</th>
+          <th className="tick">&#10003;</th>
+          <th className="tick">&#10003;</th>
         </tr>
         <tr>
-          <th>Monthly Bandwath</th>
-          <th>150GB</th>
-          <th>3030GB</th>
-          <th>1TB</th>
-          <th>120GB</th>
+          <th>IPS monitoring</th>
+          <th className="eks">&#x2715;</th>
+          <th className="tick">&#10003;</th>
+          <th className="eks">&#x2715;</th>
+          <th className="tick">&#10003;</th>
         </tr>
         <tr>
+          <th>IP Tracking</th>
+          <th className="eks">&#x2715;</th>
+          <th className="tick">&#10003;</th>
+          <th className="eks">&#x2715;</th>
+          <th className="tick">&#10003;</th>
+        </tr>
+        <tr className="for_btn">
           <th></th>
-          <th>
-            <button>Salom</button>
-          </th>
-          <th>3030GB</th>
-          <th>1TB</th>
-          <th>120GB</th>
+          <th>SUBSCRIBE</th>
+          <th>SUBSCRIBE</th>
+          <th>SUBSCRIBE</th>
+          <th>SUBSCRIBE</th>
         </tr>
       </table>
     </div>

@@ -1,16 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
 table {
   background: #1f1a46;
   font-family: sans-serif;
   border-collapse: collapse;
 }
 
-table> :nth-child(even){
-    background: #312d5f;
+table > :nth-child(even) {
+  background: #312d5f;
 }
 
-th{
-    padding: 20px;
-    border-right: 1px solid #fff;
+th {
+  padding: 20px;
+  border-right: 1px solid #fff;
+  color: #fff;
 }
 
 .tittle {
@@ -31,3 +37,28 @@ th{
   flex-direction: column;
 }
 
+.tick {
+  color: green;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.eks {
+  color: red;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.btn_card {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.for_btn > th {
+  cursor: pointer;
+}
+
+.for_btn > :nth-child(1){
+  cursor: initial;
+}
